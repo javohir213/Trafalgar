@@ -1,0 +1,564 @@
+/* mulish-300 - latin_cyrillic */
+@font-face {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/mulish-v7-latin_cyrillic-300.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/mulish-v7-latin_cyrillic-300.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* mulish-regular - latin_cyrillic */
+@font-face {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/mulish-v7-latin_cyrillic-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/mulish-v7-latin_cyrillic-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* mulish-600 - latin_cyrillic */
+@font-face {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/mulish-v7-latin_cyrillic-600.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/mulish-v7-latin_cyrillic-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* mulish-700 - latin_cyrillic */
+@font-face {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/mulish-v7-latin_cyrillic-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/mulish-v7-latin_cyrillic-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+html {
+  --scrollbarBG: #cfd8dc;
+  --thumbBG: #90a4ae;
+}
+body::-webkit-scrollbar {
+  width: 11px;
+}
+body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+body::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG);
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1260px;
+  margin: 0 auto;
+}
+
+.site-heading {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+
+.logo {
+  width: 160px;
+  height: 41px;
+  margin-right: 512px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  width: 545px;
+  list-style: none;
+  padding-left: 0;
+}
+
+.nav-item:hover a {
+  font-weight: 700;
+  color: rgb(31, 21, 52);
+}
+
+.nav-link {
+  font-family: "mulish", sans-serif;
+  text-decoration: none;
+  color: rgb(31, 21, 52, 0.5);
+  font-weight: 700;
+}
+
+.nav-link-home {
+  font-family: "mulish", sans-serif;
+  color: rgb(31, 21, 52);
+  font-weight: 700;
+}
+
+.hero {
+  margin-bottom: 113px;
+}
+
+.hero-heading {
+  display: flex;
+  align-items: center;
+}
+
+.hero-title {
+  width: 445px;
+  height: 338px;
+  margin-right: 127px;
+}
+
+.hero-title-header {
+  font-family: "mulish", sans-serif;
+  width: 427px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  margin: 0;
+}
+
+.hero-text {
+  font-family: "mulish", sans-serif;
+  width: 445px;
+  line-height: 32px;
+  margin-top: 25px;
+  margin-bottom: 48px;
+  font-weight: 300;
+  font-size: 21px;
+  color: #7d7987;
+}
+
+.button {
+  font-family: "mulish", sans-serif;
+  width: 200px;
+  color: #fff;
+  background-color: #458ff6;
+  border-radius: 55px;
+  border: 3px solid #458ff6;
+  font-size: 18px;
+  line-height: 60px;
+  font-weight: 700;
+  transition: 0.3s;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #458ff6;
+}
+
+.hero-picture {
+  width: 693px;
+  height: 598px;
+}
+
+.our-services {
+  margin-bottom: 221px;
+}
+
+.our-services-title {
+  font-family: "mulish", sans-serif;
+  line-height: 56px;
+  font-weight: bold;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 26px;
+}
+
+.span {
+  display: block;
+  width: 56px;
+  height: 2px;
+  background-color: #000;
+  border-radius: 5px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.service-text {
+  width: 952px;
+  font-family: "mulish", sans-serif;
+  text-align: center;
+  margin-top: 33px;
+  margin-right: auto;
+  margin-bottom: 80px;
+  margin-left: auto;
+  font-weight: 300;
+  line-height: 30px;
+  font-size: 18px;
+  color: #7d7987;
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: -35px;
+}
+
+.services-item {
+  width: 350px;
+  height: 354px;
+  margin: 35px;
+  padding: 50px;
+  box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+  border-radius: 20px;
+}
+
+.services-link {
+  text-decoration: none;
+}
+
+.services-link h3 {
+  font-family: "mulish", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 56px;
+  margin-top: 22px;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.services-link p {
+  color: #7d7987;
+  font-size: 16px;
+  font-family: "mulish", sans-serif;
+  font-weight: 300;
+  line-height: 28px;
+}
+
+.active-button {
+  display: block;
+  line-height: 60px;
+  width: 200px;
+  margin-top: 72px;
+  margin-right: auto;
+  margin-left: auto;
+  color: #458ff6;
+  background-color: #fff;
+}
+
+.active-button:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #458ff6;
+}
+
+.providers-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 229px;
+}
+
+.providers-image {
+  width: 650px;
+  height: 477px;
+}
+
+.providers-heading {
+  width: 486px;
+  margin-left: 137px;
+}
+
+.providers-title {
+  font-family: "mulish", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 56px;
+  width: 481px;
+}
+
+.active-span {
+  margin-top: 26px;
+  margin-bottom: 31px;
+  margin-left: 0;
+}
+
+.providers-text {
+  font-weight: 300;
+  font-family: "mulish", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #7d7987;
+  width: 450px;
+  margin-bottom: 40px;
+  padding-right: 40px;
+}
+
+.active-btn {
+  margin-top: 0;
+  margin-left: 0;
+}
+
+.mobile-apps-hero {
+  display: flex;
+  align-items: center;
+  margin-bottom: 200px;
+}
+
+.mobile-apps-heading {
+  width: 420px;
+  margin-right: 71px;
+}
+
+.apps-title {
+  width: 254px;
+  font-weight: bold;
+  font-family: "mulish", sans-serif;
+  font-size: 36px;
+  line-height: 48px;
+  margin-bottom: 30px;
+}
+
+.apps-text {
+  width: 420px;
+  padding-right: 40px;
+  margin-top: 31px;
+  margin-bottom: 40px;
+  font-size: 18px;
+  font-family: "mulish", sans-serif;
+  font-weight: 300;
+  line-height: 30px;
+  color: #7d7987;
+}
+
+.customer-header {
+  background-color: #67c3f3;
+  border-radius: 24px;
+  color: #fff;
+  width: 1120px;
+  height: 425px;
+  margin-right: auto;
+  margin-bottom: 35px;
+  margin-left: auto;
+}
+
+.customer-title {
+  line-height: 48px;
+  font-family: "mulish", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  font-size: 36px;
+  padding-top: 61px;
+  margin-bottom: 25px;
+}
+
+.customer-spn {
+  background-color: #fff;
+  margin-bottom: 66px;
+}
+
+.customer-edvart {
+  display: flex;
+  align-items: center;
+  padding-right: 116px;
+  padding-left: 120px;
+}
+
+.customer-image {
+  border: 3px solid #fff;
+  border-radius: 50%;
+  margin-right: 29px;
+}
+
+.customer-basic {
+  width: 184px;
+  margin-right: 110px;
+}
+
+.customer-edvart-name {
+  display: block;
+  width: 184px;
+  margin-bottom: 0;
+  font-size: 22px;
+  font-family: "mulish", sans-serif;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+.customer-founder {
+  margin-top: 0;
+  font-family: "mulish", sans-serif;
+  font-size: 18px;
+  line-height: 48px;
+}
+
+.quote {
+  width: 420px;
+  margin: 0;
+  padding-right: 10px;
+  font-family: "mulish", sans-serif;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 30px;
+}
+
+.arrow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 340px;
+  margin-right: auto;
+  margin-bottom: 122px;
+  margin-left: auto;
+}
+
+.larrow {
+  color: #b5d2fb;
+  opacity: 0.5;
+}
+
+.square {
+  display: inline-block;
+  background-color: #b5d2fb;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 -50px;
+}
+
+.customer-square {
+  background-color: #5b9bf3;
+}
+
+.article-title {
+  font-weight: 700;
+  font-family: "mulish", sans-serif;
+  line-height: 56px;
+  text-align: center;
+  font-size: 36px;
+}
+
+.article-span {
+  margin-bottom: 72px;
+}
+
+.article-list {
+  display: flex;
+  list-style: none;
+  margin: -35px;
+}
+
+.article-item {
+  height: 512px;
+  margin: 35px;
+  box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+}
+
+.article-item img {
+  border-radius: 20px 20px 0px 0px;
+}
+
+.article-item h3 {
+  font-family: "mulish", sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 32px;
+  margin-right: 66px;
+  margin-left: 33px;
+  margin-top: 21px;
+}
+
+.article-item p {
+  width: 266px;
+  margin-top: 12px;
+  margin-right: 51px;
+  margin-bottom: 25px;
+  margin-left: 33px;
+  font-weight: 300;
+  font-family: "mulish", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+  color: #7d7987;
+}
+
+.article-item a {
+  margin-bottom: 35px;
+  padding-left: 33px;
+  text-decoration: none;
+  color: #4089ed;
+  font-size: 17px;
+  font-weight: 600;
+  font-family: "mulish", sans-serif;
+  line-height: 28px;
+}
+
+.site-footer {
+  background-color: #5a98f2;
+  color: #fff;
+  margin-top: 201px;
+}
+
+.footer-heading {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 118px;
+  padding-bottom: 113px;
+  height: 432px;
+}
+
+.footer-logo {
+  width: 391px;
+  margin-right: 145px;
+}
+
+.footer-text {
+  margin-top: 17px;
+  margin-bottom: 31px;
+  width: 390px;
+  font-family: "mulish", sans-serif;
+  font-weight: 300;
+  line-height: 28px;
+  font-size: 18px;
+}
+
+.footer-copyright {
+  font-weight: 300;
+  font-family: "mulish", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.footer-elements {
+  width: 160px;
+  height: 214px;
+}
+
+.footer-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.footer-link:hover {
+  text-decoration: underline !important;
+}
+.footer-link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 300;
+  font-family: "mulish", sans-serif;
+  line-height: 38px;
+  font-size: 18px;
+}
+
+.footer-link strong {
+  font-family: "mulish", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 60px;
+}
